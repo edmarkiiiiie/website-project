@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jumbo Siomai - Become a Reseller</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFBC99; /* Peach color */
+            padding: 20px 5%;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-photo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .logo-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #D32F2F; /* Red color */
+            margin-left: 20px;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #f44336; /* Light red */
+}
+        /* Reseller Form Section */
+        .reseller-section {
+            background-color: #FFF0E0; /* Peach color */
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .reseller-heading {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #D32F2F; /* Red color */
+            font-weight: bold;
+        }
+
+        .reseller-form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #FFBC99; /* Peach color */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border: 2px solid #D32F2F; /* Red focus effect */
+        }
+
+        .form-submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #D32F2F; /* Red color */
+            color: white;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-submit-btn:hover {
+            background-color: #FF7043; /* Light Red hover effect */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #FF7043; /* Light Red color */
+            padding: 20px 5%;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.125rem;
+        }
+
+        footer a:hover {
+            color: #FFF0E0; /* Peach color */
+        }
+
+        /* Responsive Design for Mobile and Tablet */
+        @media (max-width: 768px) {
+            .reseller-form-container {
+                width: 90%;
+            }
+
+            .form-input, .form-submit-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img class="logo-photo" src="c:\Users\ADMIN\Downloads\images (3).jpg" alt="Jumbo Siomai Logo" />
+            <p class="logo-name">GOSHEN FOOD HOUSE</p>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="FINALS.HTML">Contact</a>
+                <a href="MENU.HTML">Menu</a>
+                <a href="ABOUT.HTML">About</a>
+                <a href="RATINGS.HTML">Ratings</a>
+                <a href="RESELLER.HTML">Become a Reseller</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reseller Form Section -->
+    <div class="reseller-section">
+        <p class="reseller-heading">Become a Reseller of Jumbo Siomai!</p>
+        <p>Fill out the form below to get started and join our growing family of resellers!</p>
+
+        <div class="reseller-form-container">
+            <form action="submit_form.php" method="POST">
+               
+                <input type="text" name="name" class="form-input" placeholder="Your Full Name" required>
+
+               
+                <input type="email" name="email" class="form-input" placeholder="Your Email Address" required>
+
+              
+                <input type="tel" name="phone" class="form-input" placeholder="Your Phone Number" required>
+
+              
+                <textarea name="message" class="form-input" rows="4" placeholder="Why do you want to be a reseller?" required></textarea>
+
+                <button type="submit" class="form-submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Jumbo Siomai Inc. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

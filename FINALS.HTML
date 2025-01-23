@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jumbo Siomai</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+            /* Header Styling */
+            header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFBC99; /* Peach color */
+            padding: 20px 5%;
+        }
+
+        .logo-section {
+            
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-photo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .logo-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #D32F2F; /* Red color */
+            margin-left: 20px;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #f44336; /* Light red */
+}
+
+        /* Body Section */
+        .body1 {
+            background-color: #ffea06; /* Light Red color */
+            padding: 5px 3% 7px;
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .tagline {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .meaning {
+            font-size: 1.125rem;
+            margin-top: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .CONTACT {
+            background-color: #FFF0E0; 
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        .CONTACT {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #D32F2F; 
+            font-weight: bold;
+        }
+
+        .offer-description {
+            font-size: 1.25rem;
+            color: #555;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Search Bar Styling */
+        .search-bar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .SB {
+            background-color: #fbff00; /* Light Red color */
+            border: none;
+            width: 70%;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        .SB input {
+            background-color: transparent;
+            width: 85%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            color: #D32F2F; /* Red color */
+        }
+
+        .SB button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .SB button img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Footer Section */
+        .body3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .P1, .P2, .P3 {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .P1 {
+            background-color: #FFBC99; /* Peach color */
+            width: 30%;
+            height: 300px;
+        }
+
+        .P1:hover {
+            opacity: 0.7;
+        }
+
+        .P2, .P3 {
+            background-color: #fc8b69; /* Light Red color */
+            width: 30%;
+            height: 200px;
+        }
+
+        .P2:hover, .P3:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive Design for Mobile and Tablet */
+        @media (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-name {
+                font-size: 1.75rem;
+            }
+
+            .body1 {
+                padding: 50px 5%;
+            }
+
+            .meaning {
+                font-size: 1rem;
+                margin-left: 0;
+            }
+
+            .body2 {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .box1, .box2 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .SB {
+                width: 100%;
+            }
+
+            .SB input {
+                width: 85%;
+            }
+
+            .P1, .P2, .P3 {
+                width: 90%;
+                height: 200px;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-name {
+                font-size: 1.5rem;
+            }
+
+            .tagline {
+                font-size: 2rem;
+            }
+
+            .body1 {
+                padding: 30px 5%;
+            }
+
+            .meaning {
+                font-size: 0.9rem;
+            }
+
+            .SB input {
+                font-size: 1rem;
+            }
+
+            .body2 {
+                padding: 10px 5%;
+            }
+
+            .box1, .box2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <img class="logo-photo" src="c:\Users\ADMIN\Downloads\images (3).jpg" alt="Jumbo Siomai Logo" />
+            <p class="logo-name">GOSHEN FOOD HOUSE</p>
+        </div>
+        <nav class="navigation">
+            <ul>
+            <a href="home.html">Home</a>
+            <a href="FINALS.HTML">Contact</a>
+            <a href="MENU.HTML">Menu</a>
+            <a href="ABOUT.HTML">About</a>
+            <a href="RATINGS.HTML">Ratings</a>
+            <a href="RESELLER.HTML">Become a Reseller</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body1">
+        <p class="tagline">BIG TASTE JUMBOLICIOUS</p>
+        
+    </div>
+
+    <div class="CONTACT">
+        <p class="five">CONTACT US</p>
+        <p><b>Location:</b> #1 MASBATE BATASAN QUEZON CITY</p>
+        <p><b>Phone:</b> 09693923067</p>
+        <p><b>Facebook:</b><a href="https://www.facebook.com/edmark.orbinalove" target="_blank"><b></b> Jumbo Siomai</a></p>
+        <p><b>Instagram:</b><a href="https://www.instagram.com/maark_ed/"><b></b> Jumbo Siomai</a></p>
+        <p><b>Email:</b> Edmarkorbina@gmail.com</p>
+</div>
+   
+</body>
+</html>

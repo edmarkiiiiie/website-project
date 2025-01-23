@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jumbo Siomai - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFBC99; /* Peach color */
+            padding: 20px 5%;
+        }
+
+        .logo-section {
+            
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-photo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .logo-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #D32F2F; /* Red color */
+            margin-left: 20px;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #f44336; /* Light red */
+}
+        /* Product Section */
+        .product-section {
+            background-color: #FFF0E0; /* Peach color */
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .product-heading {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #D32F2F; /* Red color */
+            font-weight: bold;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 30px;
+        }
+
+        .product {
+            width: 250px;
+            background-color: #FFBC99; /* Peach color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px); /* Hover effect */
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #D32F2F; /* Red color */
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #FF7043; /* Light Red color */
+            padding: 20px 5%;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.125rem;
+        }
+
+        footer a:hover {
+            color: #FFF0E0; /* Peach color */
+        }
+
+        /* Responsive Design for Mobile and Tablet */
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img class="logo-photo" src="c:\Users\ADMIN\Downloads\images (3).jpg" alt="Jumbo Siomai Logo" />
+            <p class="logo-name">GOSHEN FOOD HOUSE</p>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="FINALS.HTML">Contact</a>
+                <a href="MENU.HTML">Menu</a>
+                <a href="ABOUT.HTML">About</a>
+                <a href="RATINGS.HTML">Ratings</a>
+                <a href="RESELLER.HTML">Become a Reseller</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <p class="product-heading">Our Delicious Siomai Combos</p>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="c:\Users\ADMIN\Downloads\siumai-rice-photo-500x500.jpg" alt="Siomai Combo 1">
+                <p class="product-name">Siomai Java Rice</p>
+                <p class="product-price">₱99.00</p>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="c:\Users\ADMIN\OneDrive\Pictures\images (4).jpg" alt="Siomai Combo 2">
+                <p class="product-name">Siomai Chao fan</p>
+                <p class="product-name">BEST SELLER</p>
+                <p class="product-price">₱99.00</p>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="c:\Users\ADMIN\Downloads\LOGO.jpg" alt="Siomai Combo 3">
+                <p class="product-name">Siomai Gulaman</p>
+                <p class="product-price">₱50.00</p>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="c:\Users\ADMIN\Downloads\LOGO (1).png" alt="Siomai Combo 4">
+                <p class="product-name">Siomai Bilao</p>
+                <p class="product-price">₱499.00</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
